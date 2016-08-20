@@ -1,0 +1,22 @@
+{
+  "name": "vue-template-compiler-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergaldoyle/vue-template-compiler-loader.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fergaldoyle/vue-template-compiler-loader/issues"
+  },
+  "homepage": "https://github.com/fergaldoyle/vue-template-compiler-loader#readme",
+  "dependencies": {
+    "vue-template-compiler": "^2.0.0-rc.3"
+  }
+}
