@@ -1,8 +1,8 @@
 # vue-template-compiler-loader
 
-`npm i vue-template-compiler-loader --save-dev`
-
 Webpack loader to pre-compile Vue 2.0 templates.
+
+`npm i vue-template-compiler-loader --save-dev`
 
 ### Webpack config
 To `module.loaders` add:
@@ -16,9 +16,38 @@ To `module.loaders` add:
 
 `template` will be an object
 
-```
+```javascript
 {
   render: Function,
   staticRenderFns: Array<Function>
+}
+```
+
+Set `render` and `staticRenderFns` properties on a component e.g:
+
+```javascript
+// manually
+import template from './template.html'
+{
+  name: 'myComponent',
+  render: template.render,
+  staticRenderFns: template.staticRenderFns,
+  mounted () {}
+}
+
+// mixin
+import template from './template.html'
+{
+  name: 'myComponent',
+  mixins: [template],
+  mounted () {}
+}
+
+// stage2 object spread
+import template from './template.html'
+{
+  name: 'myComponent',
+  ...template,
+  mounted () {}
 }
 ```
