@@ -28,7 +28,7 @@ Set `render` and `staticRenderFns` properties on a component e.g:
 ```javascript
 // manually
 import template from './template.html'
-{
+export const myComponent = {
   name: 'myComponent',
   render: template.render,
   staticRenderFns: template.staticRenderFns,
@@ -37,7 +37,7 @@ import template from './template.html'
 
 // mixin
 import template from './template.html'
-{
+export const myComponent = {
   name: 'myComponent',
   mixins: [template],
   mounted () {}
@@ -45,7 +45,7 @@ import template from './template.html'
 
 // stage2 object spread
 import template from './template.html'
-{
+export const myComponent = {
   name: 'myComponent',
   ...template,
   mounted () {}
