@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/fergaldoyle/vue-template-compiler-loader#readme",
   "dependencies": {
-    "vue-template-compiler": "^2.0.0-rc.3"
+    "vue-template-compiler": "^2.0.0-rc.6"
   }
 }
